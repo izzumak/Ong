@@ -10,17 +10,22 @@
 </head>
 <body>
     <header>
-  <!-- Botão hambúrguer (aparece só no mobile) -->
   <div class="hamburguer" onclick="toggleMenu()">☰</div>
 
-  <!-- Seu menu já existente -->
-  <nav id="navmenu">
-    <a href="index.html">Home</a>
-    <a href="projetos.html">Projetos Sociais</a>
-    <a href="cadastro.html">Portal do Voluntário</a>
-  </nav>
+ <nav id="navmenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="projetos.html">Projetos Sociais ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="projetos.html">Sementes do Saber</a></li>
+        <li><a href="projetos.html">Jovens de Futuro</a></li>
+      </ul>
+    </li>
+    <li><a href="cadastro.html">Portal do Voluntário</a></li>
+  </ul>
+</nav>
 </header>
-
 <main>
     <h1>Futura Esperança</h1>
     <div class="container">
@@ -47,22 +52,30 @@
         <h3>Prêmio Nacional de Iniciativas Sociais em Educação</h3>
             <p>Em 2023, a Futura Esperança foi reconhecida com o Prêmio Nacional de Iniciativas Sociais em Educação, concedido pelo Ministério da Cidadania, por seu impacto comprovado na formação de crianças e jovens em situação de vulnerabilidade. O prêmio destacou o trabalho inovador dos projetos Sementes do Saber e Jovens de Futuro, que combinam educação, saúde emocional e inclusão social. Essa conquista reforçou a credibilidade da ONG em nível nacional e motivou toda a equipe a continuar investindo em práticas transformadoras que promovem dignidade, conhecimento e esperança para as comunidades atendidas.</p>
     </section>
-        <section class="equipe">
-            <div class="card">
-        <div class="Larissa">
-            <img id="Lari" src="pictures/LarissaEquipe.png" alt="Dra. Larissa Tavares, Psicóloga" style="max-width:100%; height:auto;">
-            <h3>Dra. Larissa Tavares – Psicóloga</h3>
-                <p>Formada em Psicologia pela UFRJ, Larissa é especialista em desenvolvimento infantil e mediação de conflitos. Na Futura Esperança, ela oferece apoio emocional às crianças e jovens, promovendo saúde mental e fortalecimento da autoestima.</p></div></div>
-            <div class="card">
-        <div class="Rafael">    
-                <img id="Rafa" src="pictures/RafaelEquipe.png" alt="Dr. Rafael Monteiro, Médico" style="max-width:100%; height:auto;">
-                <h3>Dr. Rafael Monteiro  – Médico</h3>
-                <p>Graduado em Medicina pela UFMG, Rafael atua com foco em saúde preventiva e qualidade de vida. Na ONG, coordena ações de conscientização sobre cuidados básicos, nutrição e bem-estar físico, garantindo mais saúde e segurança.</p></div></div>
-            <div class="card">
-        <div class="Pedro">
-                <img id="Ana" src="pictures/AnaEquipe.png" alt="Dra. Anna Carolina, Advogada" style="max-width:100%; height:auto;">
-                <h3>Dra. Anna Carolina - Advogada</h3>
-                <p>Advogada formada pela USP, Anna Carolina é especialista em direitos da criança e do adolescente. Na equipe, ela orienta juridicamente as famílias e assegura que os direitos dos jovens sejam respeitados e protegidos em todas as ações da ONG.</p></div></div>
+        <section class="equipe grid-12">
+            <div class="card col-4">
+                <div class="Larissa">
+                    <img id="Lari" src="pictures/LarissaEquipe.png" alt="Dra. Larissa Tavares, Psicóloga" style="max-width:100%; height:auto;">
+                    <h3>Dra. Larissa Tavares – Psicóloga</h3>
+                    <p>Formada em Psicologia pela UFRJ, Larissa é especialista em desenvolvimento infantil e mediação de conflitos. Na Futura Esperança, ela oferece apoio emocional às crianças e jovens, promovendo saúde mental e fortalecimento da autoestima.</p>
+                </div>
+            </div>
+
+            <div class="card col-4">
+                <div class="Rafael">    
+                    <img id="Rafa" src="pictures/RafaelEquipe.png" alt="Dr. Rafael Monteiro, Médico" style="max-width:100%; height:auto;">
+                    <h3>Dr. Rafael Monteiro  – Médico</h3>
+                    <p>Graduado em Medicina pela UFMG, Rafael atua com foco em saúde preventiva e qualidade de vida. Na ONG, coordena ações de conscientização sobre cuidados básicos, nutrição e bem-estar físico, garantindo mais saúde e segurança.</p>
+                </div>
+            </div>
+            
+            <div class="card col-4">
+                <div class="Pedro">
+                    <img id="Ana" src="pictures/AnaEquipe.png" alt="Dra. Anna Carolina, Advogada" style="max-width:100%; height:auto;">
+                    <h3>Dra. Anna Carolina - Advogada</h3>
+                    <p>Advogada formada pela USP, Anna Carolina é especialista em direitos da criança e do adolescente. Na equipe, ela orienta juridicamente as famílias e assegura que os direitos dos jovens sejam respeitados e protegidos em todas as ações da ONG.</p>
+                </div>
+            </div>
         </section>
     <section>
         <h3>Blog</h3>

@@ -8,17 +8,23 @@
     <title>Portal do Voluntário</title>
 </head>
 <body>
-    <header>
-     <!-- Botão hambúrguer (aparece só no mobile) -->
+    <header> 
   <div class="hamburguer" onclick="toggleMenu()">☰</div>
 
-  <!-- Seu menu já existente -->
-  <nav id="navmenu">
-    <a href="index.html">Home</a>
-    <a href="projetos.html">Projetos Sociais</a>
-    <a href="cadastro.html">Portal do Voluntário</a>
-  </nav>
-    </header>
+ <nav id="navmenu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="projetos.html">Projetos Sociais ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="projetos.html">Sementes do Saber</a></li>
+        <li><a href="projetos.html">Jovens de Futuro</a></li>
+      </ul>
+    </li>
+    <li><a href="cadastro.html">Portal do Voluntário</a></li>
+  </ul>
+</nav>
+</header>
     <main>
         <h1>Voluntariado</h1>
 
@@ -60,5 +66,20 @@
                 <button type="submit">Enviar</button>
             </form>
     </main>
+<div id="toast" class="toast">Cadastro enviado com sucesso!</div>
+<script>
+  const form = document.getElementById("cadastrovoluntario");
+  const toast = document.getElementById("toast");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+  });
+</script>
 </body>
 </html>
